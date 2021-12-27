@@ -1,0 +1,57 @@
+/*! declaracion de variabls globales */
+:root {
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --main-color: #004977;
+  --second-color: #2e1f54;
+  --text-color: #fff;
+  --text-color-inverse: #222;
+  --container-width: 1200px;
+}
+/*! reseteo de estilos  */
+html {
+  box-sizing: border-box; /** tamaño de la caja */
+  font-family: var(--main-color);
+  font-size: var(--font-size);
+  scroll-behavior: smooth; /** aplica una transiccion no subita eal cambiar de seccion */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /** todos los elementos hereden el box-sizing: */
+}
+body{
+    margin:0;
+    box-sizing: inherit;
+    font-size: inherit;
+    overflow-x: hidden;
+    background-color: var(--text-color);
+}
+main{
+  margin-top:50px;
+}
+img{
+    max-width: 100%;
+   
+}
+a{
+    text-decoration: none;
+    color:var(--text-color-inverse)
+}
+li{
+  list-style-type: none; 
+  color:var(--text-color-inverse) 
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 30px;
+}
+
+
+
+
