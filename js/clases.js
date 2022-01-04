@@ -151,7 +151,7 @@ function getEstudiante() {
   console.log(Math.pow(2, 4));
   let $code = document.getElementById("clase")
   $code.innerHTML = `
-    class Persona {
+    <span>class Persona {</span>
     #ruc = ""; // atributo privado
     //* el constructor es un método especial que se ejecuta en el momento
     //* de instanciar la clase
@@ -173,8 +173,8 @@ function getEstudiante() {
     mostrar() {
       console.log(this.nombre,this.ruc,this.nacimiento,this.sexo,this.activo);
     }
-  } 
-  `
+  <span>}</span> 
+  `;
 }
 const valCedula = (cedula) => {
   return true

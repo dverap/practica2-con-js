@@ -51,6 +51,17 @@ h2{
 h3{
     font-size: 30px;
 }
+
+.sintaxis{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  max-width: var(--container-width);
+  min-width: 400px;
+  margin: 0 auto;
+  padding:10px;
+ 
+}
 .js {
   width: 760px;
   max-width: 100%;
@@ -62,6 +73,10 @@ h3{
   color: var(--text-color-inverse);
   font-weight: 900;
   font-size:1.1rem
+}
+code span{
+  color:rgb(33, 122, 182);
+  font-weight:900;
 }
 
 
