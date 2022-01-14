@@ -4,6 +4,7 @@ import Coleccion from './colecciones.js'
 import Condicion from './condiciones.js'
 import Funcion from './funciones.js'
 import Promesas from './promesas.js'
+import { formValida } from './validaForm.js'
 
 document.addEventListener('DOMContentLoaded',(e) => {
   //alert("Pagina cargada")
@@ -23,5 +24,7 @@ document.addEventListener('DOMContentLoaded',(e) => {
   coleccion1.coleccion()
   const promesa1 = new Promesas()
   promesa1.promesas()
+  formValida()
+
 
 })

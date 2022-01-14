@@ -11,11 +11,12 @@
     <!--* Establece un vínculo con otro recurso -->
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/introduccion.css" />
+    <link rel="stylesheet" href="./css/formulario.css" />
     <!--? relaciona un archivo js -->
     <script defer src="./js/main.js" type="module"></script>
-  
+
     <title>Javascript</title>
-    
   </head>
   <body>
     <header class="header">
@@ -40,6 +41,24 @@
       </nav>
     </header>
     <main>
+      <section class="sintaxis">
+        <div class="introduccion">
+          <div class="introduccion-informacion">
+            <h2>¿Que es Javascript?</h2>
+            <p>
+              JavaScript es un popular lenguaje de programación de scripts para
+              añadir funcionalidades interactivas y otros contenidos web
+              dinámicos a las páginas web. Algunos ejemplos conocidos de
+              contenido en JavaScript son los formularios rellenables, las
+              presentaciones de galerías de fotos y los gráficos animados.Es un
+              excelente punto de partida para aquellos que buscan aprender más
+              sobre el desarrollo de sitios web.
+            </p>
+          </div>
+          <img src="./img/logo_js.png" alt="" />
+        </div>
+      </section>
+
       <section class="sintaxis" id="clases">
         <h2>Clases</h2>
         <pre class="js">
@@ -87,8 +106,126 @@
             
           </code>
         </pre>
+        <article class="form-container">
+          <div class="form-header">
+            <h2>Formulario De Estudiantes</h2>
+          </div>
+          <form action="" id="user-form" class="form">
+            
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                name="nombres"
+                id="nombre"
+                placeholder="Escribe tu nombre"
+                title="El nombre solo acepta letras"
+                pattern="^[A-Za-zÑñáéíóú\s]+$"
+                required
+              />
+            </div>
+             <div class="form-group">
+              <label for="cedula">Cedula</label>
+              <input
+                type="text"
+                name="cedulas"
+                id="cedula"
+                placeholder="Escribre tu cedula"
+                title="Debe poner 10 números entre 0 y 9"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="emails"
+                id="email"
+                placeholder="Escribe tu email"
+                title="Email ingresado es incorrecto"
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="nacimiento">Fecha Nacimiento</label>
+              <input
+                type="date"
+                name="nacimiento"
+                id="nacimiento"
+                placeholder="Fecha de nacimiento"
+                step="1"
+                min="1921-01-01"
+                max="2030-12-31"
+                value="2021-12-01"
+              />
+            </div>
+             <div class="form-option">
+              <label>Sexo:</label>
+              <input
+                type="radio"
+                name="sexo"
+                id="sexom"
+                value="Masculino"
+                checked
+              />
+              Masculino
+              <input type="radio" name="sexo" id="sexof" value="Femenino" />
+              Femenino
+            </div>
+            <div class="form-group">
+              <label for="carrera">Carrera:</label>
+              <select id="carrera">
+                <option value="Software">Ingenieria Software</option>
+                <option value="Alimentos">Alimentos</option>
+                <option value="Industrial">Ingenieria Industrial</option>
+                <option value="Biotecnologia">Biotecnologia</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="semestre">Semestre</label>
+              <input
+                type="number"
+                id="semestre"
+                name="semestre"
+                min="1"
+                max="10"
+                value="1"
+              />
+            </div>
+            <div class="form-group">
+              <label for="sugerencia">Sugerencia</label>
+              <textarea
+                name="sugerencias"
+                for="sugerencia"
+                id="sugerencia"
+                rows="3"
+                placeholder="Envianos tu sugerencia del proceso"
+                title="tu comentario no debe exceder de 255 caracteres"
+                data-pattern="^.{2,255}$"
+                required
+              ></textarea>
+            </div>
+            <div class="form-check">
+              <label
+                >Activo
+                <input type="checkbox" id="activo" value="activo" checked />
+              </label>
+            </div>
+
+            <button
+              id="enviar"
+              type="submit"
+              name="enviar"
+              value="enviar datos"
+            >
+              Enviar
+            </button>
+           
+
+          </form>
+        </article>
       </section>
     </main>
-    
   </body>
 </html>

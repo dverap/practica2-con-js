@@ -6,6 +6,7 @@
   left: 0;
   /* bottom: 0;
     right: 0; */
+ z-index: 999;   
 }
 .navegacion {
   display: flex;
@@ -43,8 +44,32 @@
     flex-direction: column;
   }
   .menu {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
   }
+  .menu li {
+    background-color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px #fff;
+    border-radius: 42px;
+    padding: 0.5em 0.7em;
+    margin: 10px;
+    transition: 1s ease-in-out;
+  }
+  .menu li:hover {
+    background-color: var(--titulo);
+    font-size:22px;
+   
+  }
+
+  .menu a {
+    color:tomato;
+    font-weight: 700;
+  }
+
+  
   main {
     margin-top: 350px;
   }
