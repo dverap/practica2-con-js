@@ -29,9 +29,35 @@ class Bucle {
     const students = ['John', 'Sara', 'Jack'];
     for (let element of students ) {
         console.log(element);
-    }    
-}
-    `;
+    } 
+       
+  }`;
+  }
+  bucleEjemplo() {
+      const students = ["John", "Sara", "Jack",24];
+      let j=0
+      while (j < students.length && students[j] != "Jack") {
+        console.log("while ", students[j]);
+        j = j + 1;
+      }
+      let i=20
+      for (let i = 0; i < students.length; i++) {
+      console.log("for i:", i,students[i]);
+    }
+    console.log("valor final i:=",i);
+     for (let indice in students){
+       console.log("for in=>",indice,students[indice]);
+     }  
+     for (let student of students){
+       console.log("for of=>",student);
+     }  
+    const recorrido = (student) => {
+      console.log("forEach=> ", student);
+    }; 
+    students.forEach(recorrido) 
+    students.forEach((student) => {
+      console.log("forEach=> ", student);
+    }); 
   }
 }
 export default Bucle
